@@ -1,5 +1,15 @@
 # Shadow-C2 - High-Bandwidth Stealth C2 via Traceroute Mimicry
 
+## Intended Use
+
+ShadowTrace is a research tool for detection engineering and
+blue-team validation of ICMP-based covert channels. It is intended
+for use in lab environments and on networks you own or are
+explicitly authorized to test.
+
+Running this tool against systems without authorization may violate
+applicable law. You are responsible for how you use it.
+
 ## Overview
 
 **Shadow-C2** is a proof-of-concept (PoC) C2 (Command & Control) framework that implements a novel covert channel using ICMP Type 11 (Time Exceeded) packets. The system appears as a traceroute in progress, providing stealth by:
@@ -8,6 +18,14 @@
 2. **Embedding command data** in Time Exceeded payload (inner IP header + data)
 3. **Using ICMP.seq as an upstream data carrier** (16-bit per packet)
 4. **Bandwidth amplification** - Time Exceeded packets carry 512-byte chunks vs 2-byte upstream
+
+## Naming
+
+The core covert-channel research behind this tool was developed
+under the name ShadowTrace. Shadow-C2 is the C2-focused
+implementation of that work. Internal identifiers (functions,
+modules, protocol constants) still carry the `shadowtrace_`
+prefix for continuity with the original research.
 
 ## Architecture
 
