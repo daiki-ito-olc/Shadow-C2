@@ -1,8 +1,8 @@
-# ShadowTrace C2 - Quick Start Guide
+# Shadow-C2 - Quick Start Guide
 
 ## One-Minute Overview
 
-**ShadowTrace** is a stealth C2 framework that disguises commands and results as traceroute traffic using spoofed ICMP Time Exceeded packets.
+**Shadow-C2** is a stealth C2 framework that disguises commands and results as traceroute traffic using spoofed ICMP Time Exceeded packets.
 
 - **Server**: Queues commands, sends via Type 11 Time Exceeded (512B chunks)
 - **Client**: Mimics traceroute, receives commands, executes, returns results (2B chunks)
@@ -43,13 +43,13 @@ sudo python3 server.py 192.168.1.100
 
 **Output:**
 ```
-ShadowTrace C2 Server
+Shadow-C2 Server
   Server IP      : 192.168.1.100
   Spoof IP range : 192.168.1.101 ~ (+1 per chunk)
   Magic ICMP ID  : 0x5354
   ...
 
-=== ShadowTrace C2 Server CLI ===
+=== Shadow-C2 Server CLI ===
 Type a command and press Enter -> sent on client's next poll
   'stats'  : show statistics
   'queue'  : show command queue
@@ -67,7 +67,7 @@ sudo python3 client.py 192.168.1.100 5
 
 **Output:**
 ```
-ShadowTrace Implant (Client)
+Shadow-C2 Implant (Client)
   C2 Server      : 192.168.1.100
   Poll interval  : 5s
   ...
