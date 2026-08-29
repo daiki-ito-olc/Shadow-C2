@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-ShadowTrace - C2 Server (PoC for DEFCON)
+Shadow-C2 Server (PoC for BlackHat Europe 2026 Arsenal)
 =========================================
 Paper: High-Bandwidth Stealth C2 via Traceroute Mimicry and ICMP Time Exceeded
 
@@ -12,8 +12,8 @@ Sequence (slide figure):
   ping a.b.c.d (TTL=n+m+1) -> Echo Reply from a.b.c.d     [done]
 
 Usage:
-  sudo python3 shadowtrace_server.py <SERVER_IP>
-  e.g.: sudo python3 shadowtrace_server.py 192.168.1.100
+  sudo python3 server.py <SERVER_IP>
+  e.g.: sudo python3 server.py 192.168.1.100
 
 Requirements:
   pip install scapy
