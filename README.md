@@ -1,8 +1,8 @@
-# ShadowTrace C2 - High-Bandwidth Stealth C2 via Traceroute Mimicry
+# Shadow-C2 - High-Bandwidth Stealth C2 via Traceroute Mimicry
 
 ## Overview
 
-**ShadowTrace** is a proof-of-concept (PoC) C2 (Command & Control) framework that implements a novel covert channel using ICMP Type 11 (Time Exceeded) packets. The system appears as a traceroute in progress, providing stealth by:
+**Shadow-C2** is a proof-of-concept (PoC) C2 (Command & Control) framework that implements a novel covert channel using ICMP Type 11 (Time Exceeded) packets. The system appears as a traceroute in progress, providing stealth by:
 
 1. **Spoofing intermediate router IPs** along the traceroute path
 2. **Embedding command data** in Time Exceeded payload (inner IP header + data)
