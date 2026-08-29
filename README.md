@@ -313,7 +313,3 @@ docker exec client tcpdump -i eth0 'icmp' -v
 ## Author
 [Daiki Ito](https://x.com/olc_felis)  
 [Ayato Shitomi](https://x.com/AyatoShitomi)
-
-## License
-
-For educational and authorized security testing only.
