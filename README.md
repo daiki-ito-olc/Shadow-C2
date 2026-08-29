@@ -311,7 +311,7 @@ docker exec client tcpdump -i eth0 'icmp' -v
 - Support multiple C2 servers with load balancing
 
 ## Author
-[Daiki Ito](https://x.com/olc_felis)
+[Daiki Ito](https://x.com/olc_felis)  
 [Ayato Shitomi](https://x.com/AyatoShitomi)
 
 ## License
