@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Shadow-C2 - Client / Implant (PoC for DEFCON)
+Shadow-C2 - Client / Implant (PoC for BlackHat Europe 2026 Arsenal)
 ================================================
 Paper: High-Bandwidth Stealth C2 via Traceroute Mimicry and ICMP Time Exceeded
 
